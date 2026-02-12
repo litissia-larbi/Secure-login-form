@@ -57,7 +57,7 @@ Ce devoir implémente un système complet d'authentification sécurisé avec :
 - phpMyAdmin (optionnel, pour la gestion de la base de données)
 
 
-⚠️ **Note importante** : Le fichier `config/database.php` n'est pas inclus dans le repository pour des raisons de sécurité. Voir les instructions d'installation ci-dessous.
+!!!!**Note importante** : Le fichier `config/database.php` n'est pas inclus dans le repository pour des raisons de sécurité. Voir les instructions d'installation ci-dessous.
 ### Étape 1 : Télécharger le projet
 
 ```bash
