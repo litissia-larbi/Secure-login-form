@@ -1,0 +1,22 @@
+# Fichiers de configuration sensibles
+config/database.php
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.log
+
+# Fichiers IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dossiers temporaires
+tmp/
+temp/
+cache/
+
+# Fichiers de base de données locaux
+*.sql.backup
+*.db
