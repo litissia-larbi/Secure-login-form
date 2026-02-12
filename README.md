@@ -56,14 +56,20 @@ Ce devoir implémente un système complet d'authentification sécurisé avec :
 - MySQL 5.7 ou supérieur
 - phpMyAdmin (optionnel, pour la gestion de la base de données)
 
+
+⚠️ **Note importante** : Le fichier `config/database.php` n'est pas inclus dans le repository pour des raisons de sécurité. Voir les instructions d'installation ci-dessous.
 ### Étape 1 : Télécharger le projet
 
 ```bash
-git clone [URL_DE_VOTRE_REPO]
+git clone  https://github.com/TON_USERNAME/secure-login-form.git
+```
+### Étape 2 : Créer le fichier de configuration
+```bash
 cd secure-login-form
+copy config\database.example.php config\database.php
 ```
 
-### Étape 2 : Créer la base de données
+### Étape 3 : Créer la base de données
 
 1. Ouvrez phpMyAdmin
 2. Créez une nouvelle base de données nommée `secure_login`
@@ -78,7 +84,7 @@ cd secure-login-form
 mysql -u root -p < database.sql
 ```
 
-### Étape 3 : Configuration
+### Étape 4 : Configuration
 
 Modifiez le fichier `config/database.php` avec vos paramètres :
 
@@ -89,18 +95,18 @@ define('DB_USER', 'root');           // Votre user MySQL
 define('DB_PASS', '');               // Votre password  MySQL
 ```
 
-### Étape 4 : Déployer sur le serveur web
+### Étape 5 : Déployer sur le serveur web
 
 - **XAMPP/WAMP** : Copiez le dossier dans `htdocs/`
 - **Serveur Linux** : Copiez dans `/var/www/html/`
 
-### Étape 5 : Accéder à l'application
+### Étape 6 : Accéder à l'application
 
 Ouvrez votre navigateur et allez à :
 ```
 http://localhost/secure-login-form/
 ```
-
+ 
 ##  Compte de Test
 
 Un compte administrateur est créé automatiquement :
